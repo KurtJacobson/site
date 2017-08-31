@@ -2,15 +2,14 @@ site_name: Kurt Jacobson
 site_description: Kurt Jacobson's personal site
 site_url: https://kurtjacobson.github.io
 
-#repo_name: KurtJacobson/site
-#repo_url: https://github.com/KurtJacobson/site/
+repo_name: KurtJacobson/site
+repo_url: https://github.com/KurtJacobson/site/
 
-# Build to master branch on kurtjacobson.github.io
-site_dir: /home/kurt/Desktop/Sources/kurtjacobson.github.io
-
-site_favicon: 'images/favicon.ico'
+# Build to master branch of kurtjacobson.github.io
+site_dir: /home/kurt/Sources/kurtjacobson.github.io
 
 theme: material
+site_favicon: 'images/favicon.ico'
 
 pages:
 - Home: index.md
