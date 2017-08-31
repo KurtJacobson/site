@@ -1,25 +1,8 @@
 # Welcome to my website!
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+I plan to move much of the stuff from my Google and Weebly sites to this one.
 
-## Commands
+I also hope to better document the RF45 conversion here and add links to the CAD
+models and drawings to make them easier to browse and download than they currently
+are on Google Drive.
 
-`#!python a += len(h)` which is kinda funny
-
-You might find a footnote[^1] at the bottom of this page.
-
-[^1]: I am the footnote that you found.
-
-
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
