@@ -1,10 +1,22 @@
-## Using the mouse to move widgets in GTK+
+### Introduction
 
-Here is a simple example demonstrating how one can move GTK+ widgets with the mouse.
+A simple example demonstrating how to move GTK+ widgets with the mouse.
 
-We use the 'motion-notify' event to update the widget position. Before moving get 
-the widgets size and position as well as its parents container size and check to make 
-sure it does not get moved outside of its containers bounds.
+### Synopsis
+
+!!! note
+    To avoid having to take into account window border offsets, we use the change
+    in position of the pointer rather than the absolute position for determining
+    how much to move the widget. This is extremely important for making the code
+    work reliably with different window managers and window types.
+
+On _button_press_event_ (called once at drag begin) get the initial location of the pointer
+and calculate the maximum change in position of the widget such that is will
+not be moved outside of the border of its parent window.
+
+On _motion-notify_event_ (called during drag motion) calculate the change in position of the pointer and
+determine the position to move the widget to, taking into account that the widget
+must not exceed the bounds of its parent.
 
 ### Result
 
@@ -38,6 +50,7 @@ class MoveButton(Gtk.Fixed):
         self.initial_pos_y = 0
 
 
+    # Called on "drag start"
     def button_press_event(self, widget, event):
 
         # Get the parent window size
@@ -61,7 +74,7 @@ class MoveButton(Gtk.Fixed):
         self.initial_pos_x = x
         self.initial_pos_y = y
 
-
+    # Called on "drag motion"
     def motion_notify_event(self, widget, event):
 
         # Calculate the change in position of the pointer

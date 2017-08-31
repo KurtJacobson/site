@@ -5,28 +5,51 @@ site_url: https://kurtjacobson.github.io
 repo_name: KurtJacobson/site
 repo_url: https://github.com/KurtJacobson/site/
 
-remote_branch: master
-remote_name: https://github.com/KurtJacobson/kurtjacobson.github.io.git
-
 # Build to master branch of kurtjacobson.github.io
 site_dir: /home/kurt/Sources/kurtjacobson.github.io
+
+site_author: Kurt Jacobson
+copyright: Copyright &copy; 2017  Kurt Jacobson
 
 theme: material
 site_favicon: 'images/favicon.ico'
 
+
 pages:
 - Home: index.md
 - Machine Shop:
-  - CNC Conversions: 
+  - CNC Conversions:
     - RF45 Mill: RF45.md
-- Python Examples: python/python_examples.md
+- Python Examples:
+  - Using the mouse to move widgets in GTK+: python/move_widgets.md
 
+
+
+# Extensions
 markdown_extensions:
-  - admonition
-  - codehilite(linenums=true)
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite(guess_lang=true)
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc(permalink=true)
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
 
 extra:
   logo: 'images/kcj.png'
   palette:
-    primary: 'gray'
-    accent: 'indigo'
+    primary: Grey
+    accent: Grey
