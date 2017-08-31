@@ -1,0 +1,30 @@
+site_name: Kurt Jacobson
+site_description: Kurt Jacobson's personal site
+site_url: https://kurtjacobson.github.io
+
+#repo_name: KurtJacobson/site
+#repo_url: https://github.com/KurtJacobson/site/
+
+# Build to master branch on kurtjacobson.github.io
+site_dir: /home/kurt/Desktop/Sources/kurtjacobson.github.io
+
+site_favicon: 'images/favicon.ico'
+
+theme: material
+
+pages:
+- Home: index.md
+- Machine Shop:
+  - CNC Conversions: 
+    - RF45 Mill: RF45.md
+- Python Examples: python/python_examples.md
+
+markdown_extensions:
+  - admonition
+  - codehilite(linenums=true)
+
+extra:
+  logo: 'images/kcj.png'
+  palette:
+    primary: 'gray'
+    accent: 'indigo'
