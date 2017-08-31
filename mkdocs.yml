@@ -28,7 +28,7 @@ pages:
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
-  - markdown.extensions.codehilite(guess_lang=true)
+  - markdown.extensions.codehilite(guess_lang=true, linenums=true)
   - markdown.extensions.def_list
   - markdown.extensions.footnotes
   - markdown.extensions.meta
