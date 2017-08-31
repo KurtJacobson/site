@@ -5,8 +5,8 @@ site_url: https://kurtjacobson.github.io
 repo_name: KurtJacobson/site
 repo_url: https://github.com/KurtJacobson/site/
 
-remote_name: https://github.com/KurtJacobson/kurtjacobson.github.io.git
 remote_branch: master
+remote_name: https://github.com/KurtJacobson/kurtjacobson.github.io.git
 
 # Build to master branch of kurtjacobson.github.io
 site_dir: /home/kurt/Sources/kurtjacobson.github.io
