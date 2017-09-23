@@ -23,6 +23,7 @@ pages:
     - RF45 Mill: RF45.md
 - Python Examples:
   - Using the mouse to move widgets in GTK+: python/move_widgets.md
+- Useful Programs: useful_programs.md
 
 
 # Extensions
