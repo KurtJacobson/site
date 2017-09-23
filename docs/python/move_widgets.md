@@ -4,12 +4,6 @@ A simple example demonstrating how to move GTK+ widgets with the mouse.
 
 ### Synopsis
 
-!!! note
-    To avoid having to take into account window border offsets, we use the change
-    in position of the pointer rather than the absolute position for determining
-    how much to move the widget. This is extremely important for making the code
-    work reliably with different window managers and window types.
-
 On _button_press_event_ (called once at drag begin) get the initial location of the pointer
 and calculate the maximum change in position of the widget such that is will
 not be moved outside of the border of its parent window.
@@ -17,6 +11,12 @@ not be moved outside of the border of its parent window.
 On _motion-notify_event_ (called during drag motion) calculate the change in position of the pointer and
 determine the position to move the widget to, taking into account that the widget
 must not exceed the bounds of its parent.
+
+!!! note
+    To avoid having to take into account window border offsets, we use the change
+    in position of the pointer rather than the absolute position for determining
+    how much to move the widget. This is extremely important for making the code
+    work reliably with different window managers and window types.
 
 ### Result
 
@@ -33,8 +33,7 @@ must not exceed the bounds of its parent.
 import gi
 
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk, Gdk
-from gi.repository import GObject
+from gi.repository import Gtk
 
 class MoveButton(Gtk.Fixed):
 
