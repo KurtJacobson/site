@@ -20,10 +20,8 @@ must not exceed the bounds of its parent.
 
 ### Result
 
-<video autoplay loop>
-  <source src="../images/move_btn.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+![Example](https://i.imgur.com/00LAlhM.gif)
+
 
 ### Example Code
 
