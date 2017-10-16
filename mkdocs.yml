@@ -18,6 +18,8 @@ site_favicon: 'images/favicon.ico'
 
 pages:
 - Home: index.md
+- Programing:
+  - Hazzy: hazzy.md
 - Machine Shop:
   - Equipment List: machine_shop/equipment_list.md
   - CNC Conversions:
