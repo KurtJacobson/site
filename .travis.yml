@@ -4,5 +4,5 @@ install:
 - pip install mkdocs-material
 script:
 - mkdocs build --verbose --clean --strict
-- ./.travis/deploy.sh -c .travis/.env
+- ./deploy.sh
 
