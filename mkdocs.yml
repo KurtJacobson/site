@@ -6,7 +6,8 @@ repo_name: KurtJacobson/site
 repo_url: https://github.com/KurtJacobson/site/
 
 # Build to master branch of kurtjacobson.github.io
-site_dir: /home/kurt/Sources/kurtjacobson.github.io
+#site_dir: /home/kurt/Sources/kurtjacobson.github.io
+site_dir: dist
 
 site_author: Kurt Jacobson
 copyright: Copyright &copy; 2017  Kurt Jacobson
