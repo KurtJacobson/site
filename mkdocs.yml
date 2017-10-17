@@ -1,12 +1,11 @@
 site_name: Kurt Jacobson
-site_description: Kurt Jacobson's personal site
+site_description: Kurt Jacobson's personal website
 site_url: https://kurtjacobson.github.io
 
 repo_name: KurtJacobson/site
 repo_url: https://github.com/KurtJacobson/site/
 
-# Build to master branch of kurtjacobson.github.io
-#site_dir: /home/kurt/Sources/kurtjacobson.github.io
+# Needed for deploy.sh
 site_dir: dist
 
 site_author: Kurt Jacobson
@@ -19,14 +18,14 @@ site_favicon: 'images/favicon.ico'
 pages:
 - Home: index.md
 - Programing:
-  - Hazzy: hazzy.md
+  - Hazzy - A UI for LinuxCNC: hazzy.md
+  - Python Examples:
+    - Using the mouse to move widgets in GTK+: python/move_widgets.md
+    - Colored Logging in Python: python/colored_logging.md
+- CNC Conversions:
+  - RF45 Mill: RF45-CNC.md
 - Machine Shop:
   - Equipment List: machine_shop/equipment_list.md
-  - CNC Conversions:
-    - RF45 Mill: RF45.md
-- Python Examples:
-  - Using the mouse to move widgets in GTK+: python/move_widgets.md
-  - Colored Logging in Python: python/colored_logging.md
 - Useful Programs: useful_programs.md
 
 

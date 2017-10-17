@@ -1,4 +1,4 @@
-# Welcome to my website!
+# Welcome!
 
 I plan to move much of the stuff from my Google and Weebly sites to this one.
 
