@@ -1,11 +1,12 @@
 site_name: Kurt Jacobson
 site_description: Kurt Jacobson's personal website
+ # This will redirect to http://www.kcjengr.com
 site_url: https://kurtjacobson.github.io
 
 repo_name: KurtJacobson/site
 repo_url: https://github.com/KurtJacobson/site/
 
-# Needed for deploy.sh
+# Needed for deploy.sh. The dist directory is created in the Travis build env
 site_dir: dist
 
 site_author: Kurt Jacobson
@@ -20,7 +21,7 @@ pages:
 - Programing:
   - Hazzy - A UI for LinuxCNC: hazzy.md
   - Python Examples:
-    - Using the mouse to move widgets in GTK+: python/move_widgets.md
+    - Dragable widgets in GTK3: python/move_widgets.md
     - Colored Logging in Python: python/colored_logging.md
 - CNC Conversions:
   - RF45 Mill: RF45-CNC.md
@@ -57,4 +58,4 @@ extra:
   logo: 'images/kcj.png'
   palette:
     primary: Grey
-    accent: Grey
+    accent: Blue
