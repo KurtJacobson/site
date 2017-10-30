@@ -6,7 +6,7 @@ This repository contains the source for my website: http://www.kcjengr.com
 
 The site is built using [MkDocs][mkdocs] and the [Material theme][theme].
 I use Travis CI to build the site and the `deploy.sh` script found [here][script]
-to push the site to https://github.com/KurtJacobson/kurtjacobson.github.io, from
+to push the site to https://github.com/KurtJacobson/kcjengr.com, from
 which it is hosted by GitHub.
 
 
